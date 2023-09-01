@@ -4,15 +4,17 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class StepDefination {
 	WebDriver driver = null;
+
 	@Given("the user navigates to JavaTpoint.com")
 	public void the_user_navigates_to_java_tpoint_com() throws Exception {
-		driver = new ChromeDriver();
+		driver = new FirefoxDriver();
 		driver.get("https://www.javatpoint.com/");
 	}
 
