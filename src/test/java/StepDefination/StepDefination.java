@@ -14,7 +14,7 @@ public class StepDefination {
 
 	@Given("the user navigates to JavaTpoint.com")
 	public void the_user_navigates_to_java_tpoint_com() throws Exception {
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 		driver.get("https://www.javatpoint.com/");
 	}
 
